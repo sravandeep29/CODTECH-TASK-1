@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* CSS Styles */
+        body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            font-size:medium;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+            background: #424dc800;
+            margin: 1rem 5rem;
+            border-radius: 8px;
+            box-shadow: 10px 20px 10px rgba(30, 6, 209, 0.849);
+        }
+
+        #skills ul {
+            list-style: none;
+        }
+
+        #skills ul li {
+            background: #333;
+            color: #fff;
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin: 0.5rem 0;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            width: 80%;
+            max-width: 500px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid red;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: gold;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            form input, form textarea {
+                width: 100%;
+            }
+        }
+        .name{
+            font-size: 50px;
+        }
+        img{
+            height: 300px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1 class="name">Hi,I'am Sravandeep Kommu</h1>
+        <h1 class="name">Welcome to my portfolio</h1>
+        <p></p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is K. Sravandeep. I am from Madanpalli and I am 19 years old. I am currently a student with a keen interest in learning Full Stack Development (FSD) at the Web Club Academy. I enjoy coding on LeetCode, and it makes me very happy when I successfully get the correct output. A fun fact about me is that I am just started learning everything step by step, constantly improving my skills. I am very thankful to the Saran anna(Web Club Academy founder)for the support and guidance.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>My Technical level</p>
+        <h3>Frontend developer</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+        <h3>Backend developer</h3>
+        <ul>
+            <li>Node js</li>
+            <li>Express js</li>
+        </ul>
+        <h3>Programming languages</h3>
+        <ul>
+            <li>C language</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution Name</th>
+                <th>Year of Passing</th>
+                <th>Percentage/CGPA</th>
+            </tr>
+            <tr>
+                <td>B Tech</td>
+                <td>Madanpalli Institute of technology and Science</td>
+                <td>pursuing</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Krishna reddy</td>
+                <td>2022</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>New Little Flower</td>
+                <td>2020</td>
+                <td>100%</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>1.Instagram Clone</h3>
+            <p>I am exicted to share that i have Completed my first project, an Instagram clone, was incredibly fulfilling. I dedicated nearly a full week to mastering HTML, CSS, and JavaScript for the frontend, and Express.js and Node.js for the backend. Overcoming challenges, like mastering a two-column layout tab with the guidance of resources and my instructor, taught me valuable skills in time management and patience. It was a rewarding experience that deepened my understanding of web development.</p>
+            <img src="images/Instapage.jpg">
+            <h3>2.Movie Review Website</h3>
+            <p>Completing my second project, a movie review website, was another exciting milestone in my learning journey. I integrated features such as trailers, ratings, and movie descriptions using HTML, CSS, and JavaScript for the frontend, and leveraged Express.js and Node.js for the backend, just like my first project. Implementing a form to submit movie data to the server added complexity, but I managed it by applying the skills I learned previously. This project not only expanded my technical skills but also reinforced the importance of seamless frontend-backend integration in web development.</p>
+            <h4>Homepage</h4>
+            <img src="images/moviehome page.jpg">
+            <h4>Movie1</h4>
+            <img src="images/movie_1.jpg">
+            <h4>Movie2</h4>
+            <img src="images/movie_2.jpg">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Get in touch</p><br><br>
+        <h3>Call me : 7032842818</h3>
+        <h3>Email : deepsravan38@gmail.com</h3>
+        <h3>Location : Andhra pradesh-Madanpalli</h3>
+    </section>
+    
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form>
+            <label for="feedback-name">Name:</label>
+            <input type="text" id="feedback-name" name="feedback-name">
+            
+            <label for="feedback-email">Email:</label>
+            <input type="email" id="feedback-email" name="feedback-email">
+            
+            <label for="feedback-message">Feedback:</label>
+            <textarea id="feedback-message" name="feedback-message"></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script>
+        // JavaScript for Smooth scrolling and Form submission
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Example form submission handler
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Form submitted successfully!');
+                // Add your form submission logic here (e.g., AJAX request)
+            });
+        });
+    </script>
+</body>
+</html>
